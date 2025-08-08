@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="top_header">
+            <div class="container">
+                <div class="top_header_left">
+                    <a href="tel:+910987654321">Toll Number : +91-09876-54321</a>
+                </div>
+                <div class="top_header_right d-flex">
+                    <div class="social_links">
+                        <a href="#"><img src="images/facebook.svg" alt="icon"></a>
+                        <a href="#"><img src="images/insta.svg" alt="icon"></a>
+                    </div>
+                    <div class="language">
+                        <select name="language" id="lang">
+                            <option value="eng">ENG</option>
+                            <option value="hindi">Hindi</option>
+                            <option value="tamil">Tamil</option>
+                        </select>
+                    </div>
+                    <div class="currency">
+                        <select name="currency" id="cur">
+                            <option value="usd">USD</option>
+                            <option value="inr">INR</option>
+                            <option value="aed">AED</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_header">
+            <div class="container">
+                <div class="inner_header">
+                    <div class="left">
+                        <a href="#"><img src="images/logo.png" alt="logo" class="img-fluid"></a>
+                    </div>
+                    <div class="right">
+                        <div class="menu">
+                            <ul>
+                                <li><a href="#">Flight</a></li>
+                                <li><a href="#">Cancellation Policy <img src="images/down-arrow.svg" alt="arrow"></a>
+                                </li>
+                                <li><a href="#">Flight Change <img src="images/down-arrow.svg" alt="arrow"></a></li>
+                                <li><a href="#">Name Change <img src="images/down-arrow.svg" alt="arrow"></a></li>
+                                <li><a href="#">Seat Change <img src="images/down-arrow.svg" alt="arrow"></a></li>
+                                <li><a href="#">Pet Policy <img src="images/down-arrow.svg" alt="arrow"></a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-btn">
+                            <i class="fas fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="mobile_menu">
+                    <div class="menu-close"><i class="fa-solid fa-square-xmark"></i></div>
+                    <ul>
+                        <li><a href="#">Flight</a></li>
+                        <li><a href="#">Cancellation Policy <img src="images/down-arrow.svg" alt="arrow"></a>
+                        </li>
+                        <li><a href="#">Flight Change <img src="images/down-arrow.svg" alt="arrow"></a></li>
+                        <li><a href="#">Name Change <img src="images/down-arrow.svg" alt="arrow"></a></li>
+                        <li><a href="#">Seat Change <img src="images/down-arrow.svg" alt="arrow"></a></li>
+                        <li><a href="#">Pet Policy <img src="images/down-arrow.svg" alt="arrow"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="banner_section">
+        <div class="banner_img">
+            <img src="images/banner.png" height="auto" alt="banner" class="desktop-banner img-fluid">
+            <img src="images/banner.png" height="auto" alt="Mobile Banner" class="img-fluid mobile-banner d-none">
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-1 col-0"></div>
+                    <div class="col-lg-10 col-12">
+                        <div class="banner_content">
+                            <div class="banner_top_content">
+                                <p class="bnr_sub_title">Board a Flight with Flightaura & fly High within the clouds</p>
+                                <h1 class="bnr_title">Search, Compare & Book Cheap Flights on Over 500+ Airlines</h1>
+                                <div class="tab_boxes">
+                                    <ul class="tabs">
+                                        <li class="tab-link current" data-tab="tab-1"><span><img src="images/flight.svg"
+                                                    alt=""></span> <span class="tab_btn_text"> Flight</span></li>
+                                        <li class="tab-link" data-tab="tab-2"><span><img src="images/policy.svg"
+                                                    alt=""></span> <span class="tab_btn_text"> Airline Policy</span>
+                                        </li>
+                                        <li class="tab-link" data-tab="tab-3"><span><img src="images/f-deal.svg"
+                                                    alt=""></span> <span class="tab_btn_text"> Flight Deals</span></li>
+                                    </ul>
+                                    <div id="tab-1" class="tab-content current ">
+                                        <form action="">
+                                            <div class="form_inner">
+                                                <div class="input_wrap top">
+                                                    <div class="input-container">
+                                                        <img src="images/plane-departure.svg" alt="icon">
+                                                        <input class="input-field" type="text" placeholder="Flying From"
+                                                            name=" from">
+                                                    </div>
+                                                    <button class="input_change">
+                                                        <img src="images/change_btn.svg" alt="icon">
+                                                    </button>
+                                                    <div class="input-container">
+                                                        <img src="images/location-dot.svg" alt="icon">
+                                                        <input class="input-field" type="text" placeholder="Flying To"
+                                                            name="to">
+                                                    </div>
+                                                </div>
+                                                <div class="input_wrap mid">
+                                                    <div class="input-container">
+                                                        <img src="images/calendar-regular.svg" alt="icon">
+                                                        <input class="input-field" type="text" placeholder="Departure"
+                                                            name="departure" onfocus="this.type='date'">
+                                                    </div>
+                                                    <div class="input-container">
+                                                        <img src="images/calendar-regular.svg" alt="icon">
+                                                        <input class="input-field" type="text" placeholder="Return Date"
+                                                            onfocus="this.type='date'" name="return">
+                                                    </div>
+                                                </div>
+                                                <div class="input_wrap btm">
+                                                    <div class="input-container">
+                                                        <img src="images/user-solid.svg" alt="icon">
+                                                        <input class="input-field" type="number" min="1" max="10"
+                                                            placeholder="Adult" name="adult">
+                                                    </div>
+                                                    <div class="input-container">
+                                                        <img src="images/child.svg" alt="icon">
+                                                        <input class="input-field" type="number" min="1" max="10"
+                                                            placeholder="Child" name="child">
+                                                    </div>
+                                                    <div class="input-container">
+                                                        <img src="images/class.svg" alt="icon">
+                                                        <select name="" id="select_flight_class">
+                                                            <option value="class">Class</option>
+                                                            <option value="first">First class</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form_btn">
+                                                <button type="submit" class="btn"> <img src="images/search-flight.svg"
+                                                        alt="icon">
+                                                    Search Flight</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="tab-2" class="tab-content ">
+                                        <form action="">
+                                            <div class="form_inner">
+                                                <div class="input_wrap top">
+                                                    <div class="input-container">
+                                                        <img src="images/plane-departure.svg" alt="icon">
+                                                        <input class="input-field" type="text" placeholder="Flight"
+                                                            name=" from">
+                                                    </div>
+                                                    <div class="input-container">
+                                                        <img src="images/class.svg" alt="icon">
+                                                        <select name="" id="select_flight_class">
+                                                            <option value="class">Policy</option>
+                                                            <option value="first">Policy 2</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form_btn">
+                                                <button type="submit" class="btn"> <img src="images/search-flight.svg"
+                                                        alt="icon">
+                                                    Search Flight</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="tab-3" class="tab-content ">
+                                        <form action="">
+                                            <div class="form_inner">
+                                                <div class="input_wrap top">
+                                                    <div class="input-container">
+                                                        <img src="images/plane-departure.svg" alt="icon">
+                                                        <input class="input-field" type="text" placeholder="Flying From"
+                                                            name=" from">
+                                                    </div>
+                                                    <button class="input_change">
+                                                        <img src="images/change_btn.svg" alt="icon">
+                                                    </button>
+                                                    <div class="input-container">
+                                                        <img src="images/location-dot.svg" alt="icon">
+                                                        <input class="input-field" type="text" placeholder="Flying To"
+                                                            name="to">
+                                                    </div>
+                                                </div>
+                                                <div class="input_wrap mid">
+                                                    <div class="input-container">
+                                                        <img src="images/calendar-regular.svg" alt="icon">
+                                                        <input class="input-field" type="text" placeholder="Departure"
+                                                            name="departure" onfocus="this.type='date'">
+                                                    </div>
+                                                    <div class="input-container">
+                                                        <img src="images/calendar-regular.svg" alt="icon">
+                                                        <input class="input-field" type="text" placeholder="Return Date"
+                                                            onfocus="this.type='date'" name="return">
+                                                    </div>
+                                                </div>
+                                                <div class="input_wrap btm">
+                                                    <div class="input-container">
+                                                        <img src="images/user-solid.svg" alt="icon">
+                                                        <input class="input-field" type="number" min="1" max="10"
+                                                            placeholder="Adult" name="adult">
+                                                    </div>
+                                                    <div class="input-container">
+                                                        <img src="images/child.svg" alt="icon">
+                                                        <input class="input-field" type="number" min="1" max="10"
+                                                            placeholder="Child" name="child">
+                                                    </div>
+                                                    <div class="input-container">
+                                                        <img src="images/class.svg" alt="icon">
+                                                        <select name="" id="select_flight_class">
+                                                            <option value="class">Class</option>
+                                                            <option value="first">First class</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form_btn">
+                                                <button type="submit" class="btn"> <img src="images/search-flight.svg"
+                                                        alt="icon">
+                                                    Search Flight</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 col-0"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feature section_space">
+        <div class="container">
+            <div class="feature_top_content">
+                <p class="t-title mb-0">Featured</p>
+                <h2 class="m-title mb-3">Our Trendy Blogs </h2>
+                <p class="des text-center">Stay familiar with all the prime spots to visit in every corner of the World
+                    with our blogs. Flightaura is Paradise for all travel enthusiasts.</p>
+            </div>
+            <div class="feature_slide_boxes  carousel owl-carousel" id="carousel">
+                <div class="feature_box_content">
+                    <div class="ft-innerbox">
+                        <div class="ft-img">
+                            <img src="images/blog_img_1.png" alt="">
+                        </div>
+                        <div class="ft-headline pera-content">
+                            <div class="ft-blog">
+                                <div class="ft-date">
+                                    <a href="javascript:void(0)"> September 4, 2024</a>
+                                </div>
+                            </div>
+                            <h3 class="blog_title">Expedia Name Change Policy</h3>
+                            <p class="blog-des">
+                                Looking for a name change on Expedia flight tickets? The Expedia name change policy can
+                                help you do so.
+                            </p>
+                            <a href="#" class="blog_read_more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature_box_content">
+                    <div class="ft-innerbox">
+                        <div class="ft-img">
+                            <img src="images/blog_img_1.png" alt="">
+                        </div>
+                        <div class="ft-headline pera-content">
+                            <div class="ft-blog">
+                                <div class="ft-date">
+                                    <a href="javascript:void(0)"> September 4, 2024</a>
+                                </div>
+                            </div>
+                            <h3 class="blog_title">Expedia Name Change Policy</h3>
+                            <p class="blog-des">
+                                Looking for a name change on Expedia flight tickets? The Expedia name change policy can
+                                help you do so.
+                            </p>
+                            <a href="#" class="blog_read_more">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="exclusive section_space">
+        <div class="container">
+            <div class="ex_wrap">
+                <div class="row justify-content-between align-items-start pt-lg-4 pb-lg-5">
+                    <div class="col-lg-6 mb-lg-3 mb-md-4 order-lg-1  order-2">
+                        <div>
+                            <div class="exclusive_top_content">
+                                <p class="t-title mb-0">Exclusive</p>
+                                <h2 class="m-title mb-4">Flight Deals </h2>
+                                <p class="des ">Save Up to 50% on Flights to USA, Canada and Mexico for FIFA World Cup
+                                    2026 Get Your Ticket to the FIFA World Cup 2026 at the Best Price!</p>
+                                <a href="#" class="exclusive_read_more">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-lg-3 mb-md-4 order-lg-2  order-1">
+                        <div class="exclusive_top_right">
+                            <div class="img">
+                                <img src="images/exclusive_top_right.png" alt="img" class="img-fluid w-100">
+                            </div>
+                            <div class="text">
+                                <div class="exclusive_top_right_text">
+                                    <div class="left_text">
+                                        <h6>First Class Flight</h6>
+                                        <p>Call Today & get the best Flight Deal</p>
+                                    </div>
+                                    <div class="box_button">
+                                        <a href="#" class="box_btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-md-4  order-3">
+                        <div class="exclusive_btm_box">
+                            <div class="exclusive_btm_box_img">
+                                <img src="images/business_class.png" alt="img" class="img-fluid w-100">
+                            </div>
+                            <div class="exclusive_btm_text">
+                                <div class="exclusive_btm_box_text">
+                                    <div class="left_text">
+                                        <h6>Business Class Flight</h6>
+                                        <p>Call Today & get the best Flight Deal</p>
+                                    </div>
+                                    <div class="box_button">
+                                        <a href="#" class="box_btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-md-4 order-lg-4 order-4">
+                        <div class="exclusive_btm_box">
+                            <div class="exclusive_btm_box_img">
+                                <img src="images/eco_class.png" alt="img" class="img-fluid w-100">
+                            </div>
+                            <div class="exclusive_btm_text">
+                                <div class="exclusive_btm_box_text">
+                                    <div class="left_text">
+                                        <h6>Economy Class Flight</h6>
+                                        <p>Call Today & get the best Flight Deal</p>
+                                    </div>
+                                    <div class="box_button">
+                                        <a href="#" class="box_btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-md-4 order-lg-4 order-5">
+                        <div class="exclusive_btm_box">
+                            <div class="exclusive_btm_box_img">
+                                <img src="images/pri_class.png" alt="img" class="img-fluid w-100">
+                            </div>
+                            <div class="exclusive_btm_text">
+                                <div class="exclusive_btm_box_text">
+                                    <div class="left_text">
+                                        <h6>Premium Economy Class</h6>
+                                        <p>Call Today & get the best Flight Deal</p>
+                                    </div>
+                                    <div class="box_button">
+                                        <a href="#" class="box_btn">Book Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="packages">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div>
+                        <div class="packages_top_content">
+                            <div class="img">
+                                <img src="images/packages_img.png" alt="img" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="packages_top_right_content">
+                        <p class="t-title mb-0">Packages</p>
+                        <h3 class="m-title mb-3">Recommended Packages </h3>
+                        <p class="des ">Our vision of providing an easy and comfortable travel experience for
+                            explorers came to life in 2004. We started with a strong idea and, over time, have
+                            become a trusted source for millions of travelers. Our site is a one-stop shop for
+                            like-minded adventurers.</p>
+                        <div class="counter_wrap">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-4 ">
+                                    <div class="packages_count">
+                                        <p class="packages_count_box">
+                                            1000
+                                            <span>International Packages</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-4 ">
+                                    <div class="packages_count">
+                                        <p class="packages_count_box">
+                                            500+
+                                            <span>Domestic Packages</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-4 ">
+                                    <div class="packages_count">
+                                        <p class="packages_count_box">
+                                            800+
+                                            <span>Flight Packages</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pakages_slide_boxes  carousel owl-carousel" id="carou">
+                <div class="pakages_box_content">
+                    <div class="ft-innerbox">
+                        <div class="ft-img">
+                            <img src="images/delhi.png" alt="">
+                        </div>
+                        <div class="pakages_box-content">
+                            <h3 class="pakages_box_title">New Delhi & NCR</h3>
+                            <p class="pakages_box-des">
+                                12,786 accommodations
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pakages_box_content">
+                    <div class="ft-innerbox">
+                        <div class="ft-img">
+                            <img src="images/bangalore.png" alt="image">
+                        </div>
+                        <div class="pakages_box-content">
+                            <h3 class="pakages_box_title">Bangalore</h3>
+                            <p class="pakages_box-des">
+                                12,786 accommodations
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pakages_box_content">
+                    <div class="ft-innerbox">
+                        <div class="ft-img">
+                            <img src="images/mumbai.png" alt="image">
+                        </div>
+                        <div class="pakages_box-content">
+                            <h3 class="pakages_box_title">Mumbai</h3>
+                            <p class="pakages_box-des">
+                                12,786 accommodations
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="pakages_box_content">
+                    <div class="ft-innerbox">
+                        <div class="ft-img">
+                            <img src="images/hydrabad.png" alt="image">
+                        </div>
+                        <div class="pakages_box-content">
+                            <h3 class="pakages_box_title">Hydrabad</h3>
+                            <p class="pakages_box-des">
+                                12,786 accommodations
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" style="background-image: url('images/ftr_bg_1.png');">
+        <div class="container">
+            <div class="footer_logo">
+                <img src="images/logo blue.png" alt="footer logo">
+            </div>
+            <div class="footer_link_wrap">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-sm-2">
+                        <div class="footer_menu">
+                            <h3 class="menu_title">QUICK LINKS</h3>
+                            <ul>
+                                <li><a href="#">Home </a></li>
+                                <li><a href="#"> About Us </a></li>
+                                <li><a href="#"> Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-sm-2">
+                        <div class="footer_menu">
+                            <h3 class="menu_title">BEST FLIGHT DEALS</h3>
+                            <ul>
+                                <li><a href="#">flight Booking </a></li>
+                                <li><a href="#"> Hotels Booking </a></li>
+                                <li><a href="#"> Car Rentals </a></li>
+                                <li><a href="#"> Vacation Packages </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-sm-2">
+                        <div class="footer_menu">
+                            <h3 class="menu_title">POLICY</h3>
+                            <ul>
+                                <li><a href="#">Cancellation Policy </a></li>
+                                <li><a href="#"> Privacy Policy </a></li>
+                                <li><a href="#"> Terms & Conditions </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-6 mb-sm-2">
+                        <div class="footer_menu">
+                            <h3 class="menu_title">PACKAGES</h3>
+                            <ul>
+                                <li><a href="#">Cancellation Policy </a></li>
+                                <li><a href="#"> Privacy Policy </a></li>
+                                <li><a href="#"> Terms & Conditions </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="c_left">
+                            <p>© Copyrights 2025 Flightaura | All Rights Reserved</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-12">
+                        <div class="right">
+                            <a href="#">Disclaimer</a>
+                            <a href="#">| Terms & Conditions </a>
+                            <a href="#">| Privacy & Cookies </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
